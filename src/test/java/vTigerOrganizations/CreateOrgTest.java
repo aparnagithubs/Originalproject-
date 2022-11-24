@@ -21,11 +21,12 @@ public class CreateOrgTest extends BaseClass{
 		//step4 navigate organization link
 		HomePage hp= new HomePage(driver);
 		hp.clickOrganizationsLnk();
-	
+	 
 		//enter mandatory fields and save 
 		OrganizationsPage op= new OrganizationsPage(driver);
 		op.clickOnCreateOrgImg();
-		
+	    System.out.println("  organizationnnnn");
+	    			
 		CreateNewOrganizationPage cnp=new CreateNewOrganizationPage(driver);
 		cnp.createNewOrg(ORGNAME);
 	}
