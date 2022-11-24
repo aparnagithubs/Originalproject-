@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test-Runner 1(failed)">
+    <classes>
+      <class name="vTigerOrganizations.CreateOrgTest">
+        <methods>
+          <include name="bcConfig"/>
+          <include name="bmConfig"/>
+          <include name="createwithLead52"/>
+          <include name="createOrg"/>
+          <include name="bsConfig"/>
+          <include name="createwithLead1"/>
+          <include name="asConfig"/>
+          <include name="amConfig"/>
+        </methods>
+      </class> <!-- vTigerOrganizations.CreateOrgTest -->
+    </classes>
+  </test> <!-- Test-Runner 1(failed) -->
+  <test thread-count="2" parallel="tests" name="Test-Runner 2(failed)">
+    <classes>
+      <class name="vTigerOrganizations.CreateMultipleOrganizationWithIndustryTest">
+        <methods>
+          <include name="createMultipleOrgTest"/>
+        </methods>
+      </class> <!-- vTigerOrganizations.CreateMultipleOrganizationWithIndustryTest -->
+    </classes>
+  </test> <!-- Test-Runner 2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
